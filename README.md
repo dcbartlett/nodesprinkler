@@ -1,0 +1,2 @@
+# nodesprinkler
+### a Sails application
