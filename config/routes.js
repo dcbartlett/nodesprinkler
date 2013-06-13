@@ -21,7 +21,13 @@
 //   - if no view OR model exists, Sails will respond with a 404.
 //
 module.exports.routes = {
-	
+	'/' : {
+		controller: 'home'
+	},
+	'/login' : {
+	    controller : 'auth'
+	}
+
 	// To route the home page to the "index" action of FooController
 	// (if no controller exists, Sails will look for a view called `views/home/index.*`)
 	// '/' : {

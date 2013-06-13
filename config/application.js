@@ -1,10 +1,10 @@
 var passport 	  = require('passport'),
-	LocalStrategy = require('passport-local').Strategy.
+	LocalStrategy = require('passport-local').Strategy,
 	bcrypt		  = require('bcrypt');
  
 // helper functions
 function findById(id, fn) {
-	user.find(id).done( function(err, user){
+	user.findOne(id).done( function(err, user){
 		if (err){
 			console.log(err);
 			return fn(null, null);
@@ -15,7 +15,7 @@ function findById(id, fn) {
 }
  
 function findByUsername(u, fn) {
-	User.find({
+	User.findOne({
 	  username: u
 	}).done(function(err, user) {
 		// Error handling
@@ -24,7 +24,6 @@ function findByUsername(u, fn) {
 			return fn(null, null);
 		// The User was found successfully!
 		}else{
-			console.log("User found:", user);
 			return fn(null, user);
 		}
 	});
@@ -62,11 +61,12 @@ passport.use(new LocalStrategy(
       // indicate failure and set a flash message. Otherwise, return the
       // authenticated `user`.
       findByUsername(username, function(err, user) {
-        if (err) { return done(err); }
+        if (err) { return done(null, err); }
         if (!user) { return done(null, false, { message: 'Unknown user ' + username }); }
         bcrypt.compare(password, user.password, function(err, res) {
+			console.log('bcrypt hash check was success? ', res);
 		    if (!res) return done(null, false, { message: 'Invalid Password'});
-		    return done(null, user);
+		    return done(null, null, { message: 'Logged In Successfully'} );
 		});
       })
     });
@@ -76,7 +76,7 @@ passport.use(new LocalStrategy(
 module.exports = {
 	
 	// Name of the application (used as default <title>)
-	appName: "Sails Application",
+	appName: "NodeSprinkler",
 
 	// Port this Sails application will live on
 	port: process.env.PORT || 1337,
