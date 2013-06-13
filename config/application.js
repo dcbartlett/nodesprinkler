@@ -49,8 +49,7 @@ passport.deserializeUser(function(id, done) {
 // Use the LocalStrategy within Passport.
 // Strategies in passport require a `verify` function, which accept
 // credentials (in this case, a username and password), and invoke a callback
-// with a user object. In the real world, this would query a database;
-// however, in this example we are using a baked-in set of users.
+// with a user object. 
 passport.use(new LocalStrategy(
   function(username, password, done) {
     // asynchronous verification, for effect...
