@@ -4,12 +4,13 @@ var passport 	  = require('passport'),
  
 // helper functions
 function findById(id, fn) {
-	user.findOne(id).done( function(err, user){
+	User.findOne(id).done( function(err, user){
 		if (err){
 			console.log(err);
 			return fn(null, null);
 		}else{
-			return fn(null, user);		
+			console.log('findById: ', user);
+			return fn(null, user);	
 		}
 	});
 }
@@ -36,11 +37,14 @@ function findByUsername(u, fn) {
 // this will be as simple as storing the user ID when serializing, and finding
 // the user by ID when deserializing.
 passport.serializeUser(function(user, done) {
+	console.log('serialize user', user);
   done(null, user.id);
 });
  
 passport.deserializeUser(function(id, done) {
+	console.log('id is: ', id);
   findById(id, function (err, user) {
+  	console.log('deserialize user ', user);
     done(err, user);
   });
 });
@@ -65,7 +69,8 @@ passport.use(new LocalStrategy(
         bcrypt.compare(password, user.password, function(err, res) {
 			console.log('bcrypt hash check was success? ', res);
 		    if (!res) return done(null, false, { message: 'Invalid Password'});
-		    return done(null, null, { message: 'Logged In Successfully'} );
+		    var returnUser = { username: user.username, createdAt: user.createdAt, id: user.id };
+		    return done(null, returnUser, { message: 'Logged In Successfully'} );
 		});
       })
     });
@@ -98,7 +103,7 @@ module.exports = {
 	// - verbose
 	//
 	log: {
-		level: 'info'
+		level: 'verbose'
 	},
 	express: {
 		customMiddleware: function(app)

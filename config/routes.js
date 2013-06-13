@@ -22,10 +22,12 @@
 //
 module.exports.routes = {
 	'/' : {
-		controller: 'home'
+		controller  : 'dashboard',
+		action 		: 'index'
 	},
-	'/login' : {
-	    controller : 'auth'
+	'post /login' : {
+	    controller : 'auth',
+	    action 	   : 'login'
 	}
 
 	// To route the home page to the "index" action of FooController
