@@ -1,0 +1,228 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"selected_items":
+		[
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"conv sp",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"conv ",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"set syn rub",
+				"Set Syntax: Ruby"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mikedevita/Web/Sites/nodesprinkler/config/application.js",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/config/policies.js",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/config/routes.js",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/api/controllers/AuthController.js",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/api/policies/authenticated.js",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/.tmp/disk.db",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/node_modules/sails/node_modules/request/node_modules/oauth-sign/package.json",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/api/models/User.js",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/package.json",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/api/controllers/UserController.js",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/.tmp/dirty.db",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/views/auth/index.ejs",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/api/controllers/SessionController.js",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/models.js",
+		"/Users/mikedevita/Web/sites/rubysprinkler/routes/core.rb",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/views/login.erb",
+		"/Users/mikedevita/Web/sites/rubysprinkler/warden.rb",
+		"/Users/mikedevita/Web/sites/rubysprinkler/routes/auth.rb",
+		"/Users/mikedevita/Web/sites/rubysprinkler/app.rb",
+		"/Users/mikedevita/Web/sites/rubysprinkler/config.ru",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/warden.rb",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/routes/core.rb",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/routes/auth.rb",
+		"/Users/mikedevita/Web/sites/rubysprinkler/assets/less/app.less",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/views/index.erb",
+		"/Users/mikedevita/Web/sites/rubysprinkler/.rvmrc",
+		"/Users/mikedevita/Web/sites/rubysprinkler/Gemfile",
+		"/Users/mikedevita/Web/sites/rubysprinkler/model.rb",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/views/layout.erb",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/model.rb",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/test.db",
+		"/Users/mikedevita/Web/sites/rubysprinkler/.ruby-version",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/database.yml",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/public/js/vendor/modernizr.2.6.2.js",
+		"/Users/mikedevita/Web/sites/rubysprinkler/public/js/app.js",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/assets/js/bootstrap-libs.js",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/assets/less/app.less",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/assets/js/app.js",
+		"/Users/mikedevita/Web/sites/rubysprinkler/.bowerrc",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/config.ru",
+		"/Users/mikedevita/Web/Sites/rubysprinkler/Cheffile",
+		"/Users/mikedevita/Web/sites/rubysprinkler/Vagrantfile",
+		"/Users/mikedevita/Web/sites/nodesprinkler/Vagrantfile",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/Cheffile",
+		"/Users/mikedevita/Web/Sites/nodesprinkler/Vagrantfile"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"self",
+			"cb",
+			"next",
+			"STRING",
+			"// ",
+			"application",
+			"	\n",
+			"mikedevita",
+			"stationMessage",
+			"timeUnit",
+			"time",
+			"USER",
+			"get '/' do\n  erb :index\nend\nget '/protected' do\n  env['warden'].authenticate!\n\n  erb :protected\nend",
+			" class=\"input-small\"",
+			"h2",
+			"'",
+			"\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "NodeSprinkler.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
